@@ -82,8 +82,6 @@ public class ContactsViewFragment extends BaseFragment implements ContactsView {
     public void onStart() {
         super.onStart();
         assert mPresenter != null;
-        // TODO deberia havber una forma de recoger información del AddFragment al guardar una tarea y asi recargar si es necesario
-        // TODO Refactor
         mPresenter.onStart(mFirstStart);
         mFirstStart = false;
     }

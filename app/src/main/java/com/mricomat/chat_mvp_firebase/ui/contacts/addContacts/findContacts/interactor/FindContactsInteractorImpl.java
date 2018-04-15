@@ -56,7 +56,7 @@ public class FindContactsInteractorImpl implements FindContactsInteractor {
         });
     }
 
-    private void getCurrentContacts(final ArrayList<String> usersRequestedIds) { // TODO REFACTOR NAMES CONTACTS
+    private void getCurrentContacts(final ArrayList<String> usersRequestedIds) {
         mUserService.getContactsFromUser().addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
