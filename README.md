@@ -1,0 +1,2 @@
+# Android_Chat_MVP_Firebase
+One example of implementing a Chat with Firebase using the MVP design pattern
