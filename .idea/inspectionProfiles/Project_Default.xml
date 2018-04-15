@@ -1,0 +1,65 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <description>BSM Code Style</description>
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="AndroidLintMissingQuantity" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AndroidLintMissingTranslation" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="BooleanExpressionMayBeConditional" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ClassNameSameAsAncestorName" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ClassNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_regex" value="[A-Z][A-Za-z\d]*" />
+      <option name="m_minLength" value="4" />
+      <option name="m_maxLength" value="64" />
+    </inspection_tool>
+    <inspection_tool class="ConstantNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="onlyCheckImmutables" value="false" />
+      <option name="m_regex" value="[A-Z][A-Z_\d]*" />
+      <option name="m_minLength" value="4" />
+      <option name="m_maxLength" value="32" />
+    </inspection_tool>
+    <inspection_tool class="ControlFlowStatementWithoutBraces" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="DefaultNotLastCaseInSwitch" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="DuplicateCondition" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoreMethodCalls" value="false" />
+    </inspection_tool>
+    <inspection_tool class="IfMayBeConditional" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="InstanceMethodNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+      <option name="m_minLength" value="4" />
+      <option name="m_maxLength" value="32" />
+    </inspection_tool>
+    <inspection_tool class="InstanceVariableNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_regex" value="m[A-Z][A-Za-z\d]*" />
+      <option name="m_minLength" value="5" />
+      <option name="m_maxLength" value="32" />
+    </inspection_tool>
+    <inspection_tool class="LocalVariableNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_ignoreForLoopParameters" value="false" />
+      <option name="m_ignoreCatchParameters" value="false" />
+      <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+      <option name="m_minLength" value="1" />
+      <option name="m_maxLength" value="20" />
+    </inspection_tool>
+    <inspection_tool class="LongLine" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="MagicCharacter" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="MethodNameSameAsParentName" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PackageNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_regex" value="[a-z]*" />
+      <option name="m_minLength" value="3" />
+      <option name="m_maxLength" value="16" />
+    </inspection_tool>
+    <inspection_tool class="StandardVariableNames" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="StaticMethodNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+      <option name="m_minLength" value="4" />
+      <option name="m_maxLength" value="32" />
+    </inspection_tool>
+    <inspection_tool class="StaticVariableNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="checkMutableFinals" value="false" />
+      <option name="m_regex" value="s[A-Z][A-Za-z\d]*" />
+      <option name="m_minLength" value="5" />
+      <option name="m_maxLength" value="32" />
+    </inspection_tool>
+    <inspection_tool class="UpperCaseFieldNameNotConstant" enabled="true" level="WARNING" enabled_by_default="true" />
+  </profile>
+</component>

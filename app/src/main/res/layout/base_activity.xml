@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Martín Rico Martínez on 15/04/18 13:05
+  ~ Copyright (c) 2018. All rights reserved
+  ~
+  ~ Last modified 30/03/18 19:56
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:titleTextColor="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/WhiteOverflow"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbarLayout">
+
+    </FrameLayout>
+
+</RelativeLayout>

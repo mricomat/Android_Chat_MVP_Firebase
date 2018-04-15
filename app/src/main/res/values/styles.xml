@@ -1,0 +1,24 @@
+<!--
+  ~ Created by Martín Rico Martínez on 15/04/18 13:05
+  ~ Copyright (c) 2018. All rights reserved
+  ~
+  ~ Last modified 6/04/18 12:16
+  -->
+
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/orange</item>
+    </style>
+
+    <style name="WhiteOverflow" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+</resources>

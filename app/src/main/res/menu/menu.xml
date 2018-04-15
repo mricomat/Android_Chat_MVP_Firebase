@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Martín Rico Martínez on 15/04/18 13:05
+  ~ Copyright (c) 2018. All rights reserved
+  ~
+  ~ Last modified 25/03/18 19:53
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/pref"
+        android:title="Preferences"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about"
+        android:title="About"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/logOut"
+        android:title="LogOut"
+        app:showAsAction="never" />
+
+</menu>

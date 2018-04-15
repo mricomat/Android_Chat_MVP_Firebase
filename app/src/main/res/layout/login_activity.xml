@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Martín Rico Martínez on 15/04/18 13:05
+  ~ Copyright (c) 2018. All rights reserved
+  ~
+  ~ Last modified 6/04/18 10:46
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mricomat.chat_mvp_firebase.ui.login.view.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.75"
+        android:scaleType="fitXY"
+        android:src="@drawable/sanfran" />
+
+    <LinearLayout
+        android:id="@+id/linear_focus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="150dp">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:text="" />
+
+        <LinearLayout
+            android:id="@+id/main_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/email_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:hint="@string/generic_input_email_hint"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/password_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:hint="@string/generic_input_pass_hint"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+                <TextView
+                    android:id="@+id/error_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    tools:text="@string/input_error_email_password_incorrect"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/sign_in_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/ubuntu_regular"
+                android:text="@string/generic_sign_in"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/google_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_bg"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/ubuntu_regular"
+                android:text="@string/generic_sign_in_google"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/no_account_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="@string/login_no_account" />
+
+                <TextView
+                    android:id="@+id/sign_up_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:gravity="center"
+                    android:text="@string/generic_no_accounts_sing_up"
+                    android:textColor="@color/orange" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

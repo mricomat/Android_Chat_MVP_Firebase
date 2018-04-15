@@ -1,0 +1,51 @@
+<!--
+  ~ Created by Martín Rico Martínez on 15/04/18 13:05
+  ~ Copyright (c) 2018. All rights reserved
+  ~
+  ~ Last modified 12/04/18 0:29
+  -->
+
+<resources>
+    <string name="app_name">Chat MVP Firebase</string>
+    <string name="login_title">Welcome!</string>
+    <string name="generic_input_username_hint">UserName</string>
+    <string name="generic_input_email_hint">Email</string>
+    <string name="generic_input_pass_hint">Password</string>
+    <string name="input_error_email_password_incorrect">Incorrect Email or Password</string>
+    <string name="generic_sign_in">Sign In</string>
+    <string name="generic_sign_in_google">Sign In with Google</string>
+    <string name="login_no_account">Don\t have an account?</string>
+    <string name="register_already_account">Do you have already an account? </string>
+    <string name="generic_no_accounts_sing_up">Sign up</string>
+    <string name="generic_register">Register</string>
+    <string name="digits_email_input">0123456789qwertyuiopasdfghjklzxcvbnm_QWERTYUIOPASDFGHJKLZXCVBNM@.</string>
+    <string name="generic_digits_input">0123456789qwertyuiopasdfghjklzxcvbnm_QWERTYUIOPASDFGHJKLZXCVBNM</string>
+    <string name="not_have_contacts">You don\'t have contacts</string>
+    <string name="chat_rooms_node">chat_rooms</string>
+    <string name="messages_node">messages</string>
+    <string name="user_names_node">user_names</string>
+    <string name="users_node">users</string>
+    <string name="user_contacts_node">user_contacts</string>
+    <string name="user_requests_node">user_requests</string>
+    <string name="sent_node">sent</string>
+    <string name="received_node">received</string>
+    <string name="new_contact">New Contact</string>
+    <string name="no_contacts">There are not more contacts</string>
+    <string name="no_requests">There are not more requests</string>
+    <string name="made_by_me">Made by Martín</string>
+    <string name="you_can_contact_me_at">You can contact me at</string>
+    <string name="my_email">martinricomartinez@gmail.com</string>
+    <string name="input_error_empty_fields">You must first fill all the fields</string>
+    <string name="error_server_connexion">Server connexion Error</string>
+    <string name="login_error">Login Error</string>
+    <string name="wait_progress">Please, wait...</string>
+    <string name="email_provider">email</string>
+    <string name="generic_error">Error</string>
+    <string name="username_exists">The username already exists. Please choose another one</string>
+    <string name="email_exists">The email already exists. Please choose another one</string>
+    <string name="google_provider">google</string>
+    <string name="generic_contacts">Contacts</string>
+    <string name="find_contacts">Find Contacts</string>
+    <string name="generic_requests">Requests</string>
+    <string name="generic_about">About</string>
+</resources>

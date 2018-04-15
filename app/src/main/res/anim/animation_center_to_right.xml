@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Martín Rico Martínez on 15/04/18 13:05
+  ~ Copyright (c) 2018. All rights reserved
+  ~
+  ~ Last modified 3/04/18 11:03
+  -->
+
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shareInterpolator="true">
+    <translate
+        android:fromXDelta="0%"
+        android:toXDelta="100%"
+        android:interpolator="@android:anim/decelerate_interpolator"
+        android:fromYDelta="0%"
+        android:toYDelta="0%"
+        android:duration="300" />
+</set>

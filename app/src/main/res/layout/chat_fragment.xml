@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Martín Rico Martínez on 15/04/18 13:05
+  ~ Copyright (c) 2018. All rights reserved
+  ~
+  ~ Last modified 3/04/18 18:27
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/input_bottom_layout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:stackFromBottom="false"
+            android:transcriptMode="normal"
+            android:scrollbars="vertical"
+            tools:listitem="@layout/current_user_message_item" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/input_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:paddingBottom="15dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="20dp"
+            android:background="@drawable/input">
+
+            <EditText
+                android:id="@+id/chat_input_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="12dp"
+                android:hint="Type a message"
+                android:singleLine="false"
+                android:inputType="textMultiLine"
+                android:textSize="18sp"
+                android:textColorHint="#c4c0bd"
+                android:background="@null"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/enter_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/input_circle_normal"
+            android:src="@drawable/input_send"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

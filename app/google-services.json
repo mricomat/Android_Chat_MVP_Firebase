@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "178246315793",
+    "firebase_url": "https://chat-mvp-firebase.firebaseio.com",
+    "project_id": "chat-mvp-firebase",
+    "storage_bucket": "chat-mvp-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178246315793:android:9212866f2159fe94",
+        "android_client_info": {
+          "package_name": "com.mricomat.chat_mvp_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "178246315793-rbhgr13ca9sihv6faksvga2mjvkr2nt9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mricomat.chat_mvp_firebase",
+            "certificate_hash": "8bf3834e6314a445735d5d37e5d92269a0dfb0eb"
+          }
+        },
+        {
+          "client_id": "178246315793-qo2d26var6sshp55lnpq5nuskmaomu1k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mricomat.chat_mvp_firebase",
+            "certificate_hash": "30cf08cb05e54c9766560d618105a2d55b339c5a"
+          }
+        },
+        {
+          "client_id": "178246315793-29b5ou2aeiunj0q23fm7lhgnl9le09sn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjcwI0ZmzzIeGYCin3bTQA80stg1AMbNo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "178246315793-29b5ou2aeiunj0q23fm7lhgnl9le09sn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
