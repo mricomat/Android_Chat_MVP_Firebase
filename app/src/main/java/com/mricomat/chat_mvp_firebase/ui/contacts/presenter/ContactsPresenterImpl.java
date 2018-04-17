@@ -70,7 +70,9 @@ public class ContactsPresenterImpl implements ContactsPresenter {
 
             @Override
             public void onError(Object errorResponse) {
-                mView.hideLoadingIndicator();
+                if(mView != null) {
+                    mView.hideLoadingIndicator();
+                }
             }
         });
     }

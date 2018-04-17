@@ -82,7 +82,7 @@ public class FindContactsInteractorImpl implements FindContactsInteractor {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     UserModel userModel = snapshot.getValue(UserModel.class);
                     assert userModel != null;
-                    // All possible Contact on this list they don't have to be actualContacts,
+                    // All possible Contacts on this list they don't have to be actualContacts,
                     // requestedContacts or the current User
                     if (!mUserService.getCurrentUserId().equals(userModel.getId()) &&
                             !usersRequestedIds.contains(userModel.getId()) &&

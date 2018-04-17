@@ -62,16 +62,19 @@ public class FireBaseAuthService {
 
         mGoogleSignInClient = GoogleSignIn.getClient(activity, gso);
 
-        mGoogleApiClient = new GoogleApiClient.Builder(activity.getApplicationContext())
-                .enableAutoManage((FragmentActivity) activity, new GoogleApiClient.OnConnectionFailedListener() {
-                    @Override
-                    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-                        Toast.makeText(activity.getApplicationContext(), connectionResult.getErrorMessage(),
-                                Toast.LENGTH_SHORT).show();
-                    }
-                })
-                .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
-                .build();
+        if (mGoogleApiClient == null) {
+            mGoogleApiClient = new GoogleApiClient.Builder(activity.getApplicationContext())
+                    .enableAutoManage((FragmentActivity) activity, new GoogleApiClient.OnConnectionFailedListener() {
+                        @Override
+                        public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+                            Toast.makeText(activity.getApplicationContext(), connectionResult.getErrorMessage(),
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                    })
+                    .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
+                    .build();
+        }
+
 
         return Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
     }
